@@ -15,3 +15,6 @@ def setting():
     return a1
 a1=setting()
 a1.get("https://cn.bing.com/")
+a2=a1.find_elements(By.CLASS_NAME,'scope')
+a2[2].click()
+#报错了，咋个办？
